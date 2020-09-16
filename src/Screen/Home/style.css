@@ -1,0 +1,43 @@
+.images-selector input {
+  position: absolute;
+  z-index: 10;
+}
+
+.img-card {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 200ms ease-in;
+  filter: grayscale(1) opacity(.8);
+}
+
+.img-card:hover {
+  filter: grayscale(0) opacity(1);
+}
+
+.img1 {
+  background-image: url(data:image/png;base64,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);
+}
+{/* 
+  add this code in Home js nd see the effect of grey and coloured animation..
+<div className="images-selector">
+          <label for="duck" class="img-card img1"></label>
+         <SiAcademia color="red" class="img-card" />
+       </div>}
+
+     */}
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    
+}  
+.div1 {
+  border-style: dotted;
+}
+.div2 {
+  padding: 10px;
+  border-style: dotted;
+}
