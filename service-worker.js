@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/React-kenshoo-live-website/precache-manifest.20fa36908e127f193f935c48c0f80059.js"
+  "/React-kenshoo-live-website/precache-manifest.9bb2e98b8f28aa468c3eb0a62a00831b.js"
 );
 
 self.addEventListener('message', (event) => {
