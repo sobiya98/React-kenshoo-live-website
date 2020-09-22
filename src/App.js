@@ -1,12 +1,21 @@
 import React from 'react';
 import Home from './Screen/Home/Home';
+import Contact from './Screen/Contact/Contact';
 import './App.css';
-import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem,FormControl ,Form} from 'react-bootstrap';
+import Navigation from './Screen/Navigation';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
 function App() {
   return (
+  	<BrowserRouter>
     <div className="App">
-      <Home />
+      <Navigation/>
+      <Switch>
+        <Route path='/Home' component={Home} exact />
+        <Route path='/Contact' component={Contact} />
+      </Switch>
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,44 +1,26 @@
-// eslint-disable-next-line
 import React from 'react';
 //install rreact bootstrap - npm install react-bootstrap bootstrap
 import {Button, Navbar, Nav,FormControl ,Form, Card,CardGroup} from 'react-bootstrap';
-//no use of this file just for your understanding..
 import './style.css';
 import './Style.scss';
 import { SiAcademia } from "react-icons/si";
+import Contact from '../Contact/Contact';
+import Svg from '../Svg/Svg';
 
 
 const Home= (props)=>{
 	return(
       <div className="div1">
-           <div>
-            <Navbar bg="light" expand="lg">
-               <Navbar.Brand href="#home">Kenshoo</Navbar.Brand>
-                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                 <Navbar.Collapse id="basic-navbar-nav">
-                   <Nav className="mr-auto">
-                     <Nav.Link href="#Industries">Industries</Nav.Link>
-                     <Nav.Link href="#Solutions">Solutions</Nav.Link>
-                     <Nav.Link href="#Products">Products</Nav.Link>
-                     <Nav.Link href="#Resource">Resource</Nav.Link>
-                     <Nav.Link href="#Company">Company</Nav.Link>   
-                   </Nav>
-                   <Form inline>
-                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                     <Button variant="outline-success">Search</Button>
-                   </Form>
-                </Navbar.Collapse>
-               </Navbar>
-            </div>
-       <div>
          <div className ="float-child">
          <br /><br/>
          <h1>Total market intelligence.Totally intelligent marketing.</h1><br/>
+          <div className="svg">
+           <Svg />
            <p>It's a new era for digital marketing, with new challenges and opportunities. From the contextual relevance of your data to making sound, fast decisions across all of the most important go-to-market channels to amazing performance and unbiased measurement—we have you covered today and tomorrow.
              <br />
              <br />
 Join the world's most successful brands and agencies who leverage the Kenshoo platform for smart decisions and strong outcomes that empower your business to achieve strategic growth.</p>
-         </div>
+         </div></div>
          <div className="float-child">
             <div className="images-selector">
              <ul class='circle-container'>
@@ -53,10 +35,10 @@ Join the world's most successful brands and agencies who leverage the Kenshoo pl
             </ul>
         </div>
         </div>
-       </div>
-         
-        <h3>An open platform for closed loop marketing</h3> <br/><br/>
-         <CardGroup>
+   
+        <div>
+          <div className="h3tag"> <h3>.</h3> <br/><br/> </div>
+         <CardGroup style={{padding :'20px'}}>
             <Card style={{backgroundColor :'#add8e6', padding :'20px'}}>
               <Card.Img variant="top" src="https://kenshoo.com/wp-content/uploads/2020/06/Pinterest_060120.png" width="100" height="300"/>
               <Card.Body>
@@ -85,6 +67,7 @@ Join the world's most successful brands and agencies who leverage the Kenshoo pl
               </Card.Body>
             </Card>
        </CardGroup>
+       </div>
        <br/><br/><h1>Why Kenshoo?</h1>
      </div>  
 

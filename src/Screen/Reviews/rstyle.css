@@ -1,0 +1,37 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	
+	{/*padding:50px; */}
+}
+
+#star1,#star2,#star3,#star4,#star5,#star6,#star7{
+ animation :star 1s ease-in-out infinite alternate;
+ transform-origin: bottom;
+ transform-box:fill-box;
+}
+@keyframes star{
+	from{
+       transform: rotatex(0deg);
+	}
+	to{
+		transform: rotateX(30deg);
+	}
+
+}
+#star{
+ animation :moveEyes 2s infinite;
+
+}
+@keyframes moveEyes{
+	from{
+       transform: translate(10px,-5px);
+	}
+	to{
+		transform: translate(-93px,-39px);
+	}
+
+}

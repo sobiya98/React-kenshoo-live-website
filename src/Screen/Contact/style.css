@@ -1,0 +1,44 @@
+.contactdiv{
+	background: rgba(0, 128, 0, 0.3);
+    padding:50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width:40%;
+    margin-top:60px;
+}
+.column{
+ float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+ 
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.formgroup{
+	background: rgba(0, 128, 0, 0.3);
+    padding:50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width:70%;
+    margin-top:30px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    transition: width 2s, height 4s;
+}
+.formgroup:hover {
+  width: 80%;
+}
+.button:hover {
+  width: 50%;
+}

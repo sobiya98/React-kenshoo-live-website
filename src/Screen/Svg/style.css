@@ -1,0 +1,40 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	text-align: center;
+}
+#fb,#insta,#twitter,#prinsta,#Linkin{
+ animation :icon 1s ease-in-out infinite alternate;
+ transform-origin: center;
+ transform-box:fill-box;
+}
+@keyframes icon{
+	from{
+       transform: rotateX(0deg);
+	}
+	to{
+		transform: rotateX(60deg);
+	}
+
+}
+
+#man_bike{
+ animation :bike 1s ease-in-out infinite alternate;
+ transform-origin: bottom;
+ transform-box:fill-box;
+}
+@keyframes bike{
+	from{
+       transform: rotatex(0deg);
+	}
+	to{
+		transform: rotateX(20deg);
+	}
+
+}
+#undraw_Ride_a_bicycle_2yok{
+	background-color: red;
+}
